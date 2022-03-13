@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap");
 
-@import url('./styles/normalize.css');
+@import url("./styles/normalize.css");
 
-@import url('~bootstrap/dist/css/bootstrap.min.css');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-body{
-    font-family: 'Merienda', cursive;
+@import url("~bootstrap/dist/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body {
+  font-family: "Merienda", cursive;
+}
+
+a,
+a:active,
+a:hover,
+a:after {
+  text-decoration: none;
 }

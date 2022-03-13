@@ -13,9 +13,13 @@ import { Movie } from 'src/app/Model/movie';
 })
 export class SliderComponent implements OnInit {
 @Input() items:Movie[]=[];
+CurrentSlideIndex:number=0;
   constructor() { }
 
   ngOnInit(): void {
+    setInterval(()=>{
+      this.CurrentSlideIndex=++this.CurrentSlideIndex%this.items.length;
+    },10000);
   }
 
 }

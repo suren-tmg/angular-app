@@ -1,0 +1,38 @@
+.movie-item{
+    display: block;
+    min-height: 300px;
+    border-radius: 5px;
+    background-color: #666;
+    border:1px solid whitesmoke;
+    margin-bottom: 2rem;
+    position: relative;
+    color: white;
+    border-radius: 1px solid #666;
+}
+
+.movie-item .movie-item-image img{
+    width: 100%;
+    border-radius: 5px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.movie-item .movie-item-rating{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+    background-color: #666;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.movie-item-rating .app-icon{
+    color: goldenrod;
+}
+
+.movie-item-title{
+    font-weight: bold;
+    margin: 0.5rem;
+}

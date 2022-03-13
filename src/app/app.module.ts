@@ -9,7 +9,9 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewsComponent } from './pages/news/news.component';
 import { SliderComponent } from './components/slider/slider.component';
-import {  BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ItemBannerComponent } from './components/item-banner/item-banner.component';
+import { MovieItemComponent } from './components/movie-item/movie-item.component'
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import {  BrowserAnimationsModule } from '@angular/platform-browser/animations'
     HomeComponent,
     NewsComponent,
     SliderComponent,
+    ItemBannerComponent,
+    MovieItemComponent,
   ],
   imports: [
     BrowserModule,
