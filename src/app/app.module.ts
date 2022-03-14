@@ -7,11 +7,14 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { NewsComponent } from './pages/news/news.component';
+import { MoviesComponent } from './movies/movies.component';
 import { SliderComponent } from './components/slider/slider.component';
 import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemBannerComponent } from './components/item-banner/item-banner.component';
-import { ItemComponent } from './components/item/item.component'
+import { ItemComponent } from './components/item/item.component';
+import { MovieComponent } from './pages/movie/movie.component';
+import {PaginatorModule} from 'primeng/paginator';
+import {TabViewModule} from 'primeng/tabview';
 
 @NgModule({
   declarations: [
@@ -19,16 +22,19 @@ import { ItemComponent } from './components/item/item.component'
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    NewsComponent,
     SliderComponent,
     ItemBannerComponent,
     ItemComponent,
+    MoviesComponent,
+    MovieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PaginatorModule,
+    TabViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

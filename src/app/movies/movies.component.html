@@ -1,0 +1,13 @@
+<div class="container"> 
+<div class="row">   
+    <div class="col-md-3"
+    *ngFor="let item of moviesList"
+    >
+    <item [itemData]="item"></item>
+</div>
+<ng-container>
+    <p-paginator [rows]="20" [totalRecords]="10000" (onPageChange)="paginate($event)"></p-paginator>
+</ng-container>
+</div>
+
+</div>

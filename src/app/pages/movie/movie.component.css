@@ -1,0 +1,21 @@
+.overview {
+  line-height: 1.5;
+}
+
+.stat{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.stat .label{
+    width: 150px;
+    font-weight: bold;
+}
+
+.stat .value{
+    color:#3B82F6;
+}
+
+.stat .value span.genre{
+    margin-right: 5px;
+}
