@@ -1,10 +1,8 @@
 <div class="container">
-    <div class="row">
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
-        <div class="col-md-2 col-6"><movie-item></movie-item></div>
+  <h2>{{ title }}</h2>
+  <div class="row">
+    <div class="col-md-2 col-6" *ngFor="let item of items">
+      <item [itemData]="item"></item>
     </div>
+  </div>
 </div>

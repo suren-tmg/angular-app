@@ -33,6 +33,8 @@
 }
 
 .movie-item-title{
+    display: block;
+    text-align: center;
     font-weight: bold;
     margin: 0.5rem;
 }

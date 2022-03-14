@@ -11,7 +11,7 @@ import { NewsComponent } from './pages/news/news.component';
 import { SliderComponent } from './components/slider/slider.component';
 import {  BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemBannerComponent } from './components/item-banner/item-banner.component';
-import { MovieItemComponent } from './components/movie-item/movie-item.component'
+import { ItemComponent } from './components/item/item.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +22,7 @@ import { MovieItemComponent } from './components/movie-item/movie-item.component
     NewsComponent,
     SliderComponent,
     ItemBannerComponent,
-    MovieItemComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,
