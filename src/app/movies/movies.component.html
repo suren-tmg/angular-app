@@ -1,13 +1,26 @@
-<div class="container"> 
-<div class="row">   
-    <div class="col-md-3"
-    *ngFor="let item of moviesList"
-    >
-    <item [itemData]="item"></item>
-</div>
-<ng-container>
-    <p-paginator [rows]="20" [totalRecords]="10000" (onPageChange)="paginate($event)"></p-paginator>
-</ng-container>
-</div>
-
+<div class="container">
+    <br />
+  <div class="row">
+    <div class="col-md-12 my-2">
+      <div class="p-fluid">
+        <span class="p-input-icon-left">
+          <i class="pi pi-search"></i>
+          <input type="text" pInputText placeholder="Search" [(ngModel)]="searchValue" (change)="SearchMovie()" />
+        </span>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of moviesList">
+      <item [itemData]="item"></item>
+    </div>
+    <ng-container>
+      <p-paginator
+        [rows]="20"
+        [totalRecords]="10000"
+        (onPageChange)="paginate($event)"
+      ></p-paginator>
+    </ng-container>
+  </div>
 </div>

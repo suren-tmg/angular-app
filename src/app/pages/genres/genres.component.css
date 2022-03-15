@@ -1,0 +1,18 @@
+.genre {
+  white-space: nowrap;
+  max-width: 320px;
+}
+
+.box-shadow-category {
+    font-size: 18px;
+    padding: 5px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 12px 2px rgb(0 0 0 / 12%);
+    cursor: pointer;
+}
+
+.box-shadow-category:hover{
+    background-color: #3B82F6;
+    color: white;
+}

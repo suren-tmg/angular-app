@@ -19,3 +19,12 @@
 .stat .value span.genre{
     margin-right: 5px;
 }
+
+.actor{
+    padding:0px 10px;
+}
+
+.actor:hover .card-body{
+    background-color: #3B82F6;
+    color: white;
+}
